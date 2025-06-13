@@ -39,10 +39,6 @@ function App() {
     }
 
     pass += requiredChars;
-    pass = pass
-      .split("")
-      .sort(() => 0.5 - Math.random())
-      .join("");
 
     setPassword(pass);
   }, [length, number, character]);
