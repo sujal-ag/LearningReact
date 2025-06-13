@@ -41,7 +41,7 @@ function App() {
     pass += requiredChars;
 
     setPassword(pass);
-  }, [length, number, character]);
+  }, [length, number, character,setPassword]);
 
   // function copy(){
   //   window.navigator.clipboard.writeText(password);
@@ -49,7 +49,7 @@ function App() {
 
   useEffect(() => {
     password_generator();
-  }, [length, number, character]);
+  }, [password_generator]);
 
   return (
     <div className="w-full h-screen bg-black flex flex-wrap justify-center items-center">
